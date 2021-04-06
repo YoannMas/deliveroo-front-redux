@@ -1,9 +1,9 @@
 import Meal from "./Meal";
 
-const Section = ({ data, setCart, cart }) => {
+const Section = ({ data }) => {
   return (
     <div className="section">
-      <h3>{data.name}</h3>
+      {data.meals.length > 0 && <h3>{data.name}</h3>}
       <div className="meal-wrapper">
         {data.meals.map((el) => {
           return <Meal data={el} key={el.id} />;
