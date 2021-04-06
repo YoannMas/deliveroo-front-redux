@@ -7,6 +7,7 @@ const Meal = ({ data }) => {
   return (
     <div
       className="meal"
+      // on click, add that meal on cart
       onClick={() => {
         dispatch({ type: "ADD", meal: data });
       }}

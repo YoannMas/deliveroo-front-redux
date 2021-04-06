@@ -5,8 +5,10 @@ import axios from "axios";
 import Restaurant from "../components/Restaurant";
 import Section from "../components/Section";
 import Cart from "../components/Cart";
+import Loader from "../components/Loader";
 
 const Content = () => {
+  // Store data about restaurant and meals
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
 
@@ -22,7 +24,7 @@ const Content = () => {
   }, []);
 
   return isLoading ? (
-    <span>En cours de chargement ...</span>
+    <Loader />
   ) : (
     <div className="content">
       <div className="container">

@@ -1,6 +1,8 @@
 // VARIABLES
 $titlecolor: #2e3333;
 $textcolor: #868a8a;
+$deliveroo-color: #03cdbd;
+$deliveroo-color-hovered: #13beb0;
 
 // SASS IMPORT
 @import "scss/header.scss";
@@ -9,6 +11,7 @@ $textcolor: #868a8a;
 @import "scss/content.scss";
 @import "scss/meal.scss";
 @import "scss/cart.scss";
+@import "scss/loader.scss";
 
 // GLOBAL
 

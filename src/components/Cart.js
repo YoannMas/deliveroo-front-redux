@@ -22,6 +22,7 @@ const Cart = () => {
       {cart.length > 0 ? (
         <>
           <div className="choices">
+            {/* Display selected meals if the cart is not empty */}
             <Choice />
           </div>
           <div className="calcul">
