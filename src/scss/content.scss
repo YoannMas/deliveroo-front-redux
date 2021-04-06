@@ -1,0 +1,14 @@
+.menu-cart {
+  background-color: #f2f5f5;
+  .container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.menu {
+  width: 68%;
+  display: flex;
+  flex-direction: column;
+}
