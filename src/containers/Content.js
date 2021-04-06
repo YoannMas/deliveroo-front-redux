@@ -4,6 +4,7 @@ import axios from "axios";
 // COMPONENTS IMPORT
 import Restaurant from "../components/Restaurant";
 import Section from "../components/Section";
+import Cart from "../components/Cart";
 
 const Content = () => {
   const [data, setData] = useState();
@@ -31,14 +32,12 @@ const Content = () => {
         <div className="container">
           <div className="menu">
             {data.categories.map((el, index) => {
-              if (el.meals.length > 0) {
-                return <Section data={el} key={index} />;
-              }
+              return <Section data={el} key={index} />;
             })}
           </div>
-          {/* <div className="cart-wrapper">
-            <Cart data={data} cart={cart} setCart={setCart} />
-          </div> */}
+          <div className="cart-wrapper">
+            <Cart />
+          </div>
         </div>
       </div>
     </div>

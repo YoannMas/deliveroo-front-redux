@@ -1,0 +1,75 @@
+.cart {
+  box-sizing: border-box;
+  min-height: 185px;
+  width: 100%;
+  background-color: #fff;
+  height: auto;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 3px 22px 12px -3px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 20px;
+  .button {
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    background-color: #03cdbd;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  .disabled {
+    background-color: #bac3c3;
+    color: #8b9a9b;
+    cursor: not-allowed;
+  }
+}
+
+.choices {
+  border-bottom: 1px solid #d1d7d7;
+  max-height: 250px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.choice {
+  box-sizing: border-box;
+  display: flex;
+  margin: 25px 0;
+  .choice-infos {
+    box-sizing: border-box;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    color: $titlecolor;
+    font-size: 16px;
+  }
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.calcul {
+  font-size: 16px;
+  color: $titlecolor;
+  border-bottom: 1px solid #d1d7d7;
+  div {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.total {
+  padding: 25px 0;
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+}
