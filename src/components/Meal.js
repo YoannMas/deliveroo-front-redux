@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useDispatch } from "react-redux";
+import PropTypes from "prop-types";
 
 const Meal = ({ data }) => {
   const dispatch = useDispatch();
@@ -11,12 +12,13 @@ const Meal = ({ data }) => {
       onClick={() => {
         dispatch({ type: "ADD", meal: data });
       }}
+      data-testid="menu-item-card"
     >
       <div className="infos">
         <h4>{data.title}</h4>
         <p>{data.description}</p>
         <div>
-          <span>{data.price} €</span>
+          <span>{data.price.replace(".", ",")} €</span>
           {data.popular ? (
             <span style={{ color: "#ff8000", fontSize: 12, fontWeight: 700 }}>
               <FontAwesomeIcon icon="star" /> Populaire
@@ -29,6 +31,10 @@ const Meal = ({ data }) => {
       {data.picture ? <img src={data.picture} alt={data.title}></img> : ""}
     </div>
   );
+};
+
+Meal.propTypes = {
+  data: PropTypes.object,
 };
 
 export default Meal;

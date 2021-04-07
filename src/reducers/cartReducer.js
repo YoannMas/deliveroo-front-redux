@@ -28,8 +28,8 @@ const cartRecucer = (state = initialState, action) => {
     case "REMOVE":
       const cartRemove = [...state.cart];
       for (let i = 0; i < cartRemove.length; i++) {
-        // If quantity is 1, delete the meal from the cart
         if (cartRemove[i].id === action.meal.id) {
+          // If quantity is 1, delete the meal from the cart
           if (cartRemove[i].quantity === 1) {
             cartRemove.splice(i, 1);
           } else {

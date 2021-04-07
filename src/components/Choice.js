@@ -11,7 +11,7 @@ const Choice = () => {
   // Iterate on each meal and display them
   return cart.map((el) => {
     return (
-      <div className="choice" key={el.id}>
+      <div className="choice" key={el.id} data-testid="cart-line">
         <div className="counter">
           {/* Button for removing a quantity of a meal*/}
           <FontAwesomeIcon
@@ -20,8 +20,12 @@ const Choice = () => {
             onClick={() => {
               dispatch({ type: "REMOVE", meal: el });
             }}
+            data-testid="minus-btn"
           />
-          <span style={{ color: "#868a8a", padding: "0 5px", fontSize: 20 }}>
+          <span
+            style={{ color: "#868a8a", padding: "0 5px", fontSize: 20 }}
+            data-testid="item-quantity"
+          >
             {el.quantity}
           </span>
           {/* Button for adding a quantity of a meal*/}
@@ -31,12 +35,13 @@ const Choice = () => {
             onClick={() => {
               dispatch({ type: "ADD", meal: el });
             }}
+            data-testid="plus-btn"
           />
         </div>
         <ul className="choice-infos">
           <li style={{ width: 200 }}>{el.title}</li>
           {/* Calcul total price for a quantity of meal */}
-          <li>{(el.price * el.quantity).toFixed(2)} €</li>
+          <li>{(el.price * el.quantity).toFixed(2).replace(".", ",")} €</li>
         </ul>
       </div>
     );

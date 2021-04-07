@@ -1,4 +1,5 @@
 import Meal from "./Meal";
+import PropTypes from "prop-types";
 
 const Section = ({ data }) => {
   return (
@@ -11,6 +12,10 @@ const Section = ({ data }) => {
       </div>
     </div>
   );
+};
+
+Section.propTypes = {
+  data: PropTypes.object,
 };
 
 export default Section;

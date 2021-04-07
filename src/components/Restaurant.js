@@ -1,4 +1,6 @@
-const restaurant = ({ data }) => {
+import PropTypes from "prop-types";
+
+const Restaurant = ({ data }) => {
   return (
     <div className="restaurant">
       <div>
@@ -10,4 +12,8 @@ const restaurant = ({ data }) => {
   );
 };
 
-export default restaurant;
+Restaurant.propTypes = {
+  data: PropTypes.object,
+};
+
+export default Restaurant;

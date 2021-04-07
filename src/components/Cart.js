@@ -28,16 +28,18 @@ const Cart = () => {
           <div className="calcul">
             <div>
               <span>Sous-total</span>
-              <span>{total.toFixed(2)} €</span>
+              <span>{total.toFixed(2).replace(".", ",")} €</span>
             </div>
             <div>
               <span>Frais de livraison</span>
-              <span>{fees.toFixed(2)} €</span>
+              <span>{fees.toFixed(2).replace(".", ",")} €</span>
             </div>
           </div>
           <div className="total">
             <span>Total</span>
-            <span>{(total + fees).toFixed(2)} €</span>
+            <span data-testid="cart-amount">
+              {(total + fees).toFixed(2).replace(".", ",")} €
+            </span>
           </div>
         </>
       ) : (
