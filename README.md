@@ -10,8 +10,9 @@ This React.js project is a copy of a Restaurant Page of Deliveroo.
 </div>
 
 ## Screenshot
-
-<img src="./src/assets/img/deliveroo.gif"/>
+<div align="center">
+  <img src="./src/assets/img/deliveroo.gif"/>
+</div>
 
 ## Dependencies
 
