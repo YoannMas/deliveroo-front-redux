@@ -6,9 +6,9 @@
 
 This React.js project is a copy of a Restaurant Page of Deliveroo.
 
-<a href="https://deliveroo-redux.netlify.app/" target="_blank">Netlify deploy</a>
+<a href="https://deliveroo-redux.netlify.app/">Netlify deploy</a>
 
-<a href="https://github.com/YoannMas/deliveroo-back" target="_blank">Backend repository</a>
+<a href="https://github.com/YoannMas/deliveroo-back">Backend repository</a>
 
 ## Screenshot
 
