@@ -7,12 +7,11 @@
 This React.js project is a copy of a Restaurant Page of Deliveroo.
 
 <a href="https://deliveroo-redux.netlify.app/">Netlify deploy</a>
+</div>
 
 ## Screenshot
 
 <img src="./src/assets/img/deliveroo.gif"/>
-
-</div>
 
 ## Dependencies
 
