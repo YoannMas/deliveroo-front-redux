@@ -10,6 +10,12 @@ Netlify deploy : https://deliveroo-redux.netlify.app/
 
 Backend repository : https://github.com/YoannMas/deliveroo-back
 
+## Screenshot
+
+<img src="./src/assets/img/deliveroo.gif"/>
+
+</div>
+
 ## Dependencies
 
 - redux
@@ -18,12 +24,6 @@ Backend repository : https://github.com/YoannMas/deliveroo-back
 - axios
 - node-sass
 - react testing library
-
-## Screenshot
-
-<img src="./src/assets/img/deliveroo.gif"/>
-
-</div>
 
 ## Setup instructions
 
