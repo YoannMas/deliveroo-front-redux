@@ -20,7 +20,9 @@ $deliveroo-color-hovered: #13beb0;
 }
 
 .container {
-  width: 1200px;
+  box-sizing: border-box;
+  // width: 80vh;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -33,3 +35,19 @@ h4 {
 p {
   color: $textcolor;
 }
+
+// RESPONSIVE
+
+// @media (max-width: 1366px) {
+//   .meal-wrapper {
+//     flex-direction: column;
+//     flex-wrap: nowrap;
+//   }
+//   .meal {
+//     width: 100%;
+//   }
+//   .container {
+//     box-sizing: border-box;
+//     margin: 0 100px;
+//   }
+// }
